@@ -1,3 +1,7 @@
+.flexControl {
+    margin-top: -3.5rem;
+}
+
 form { 
     display: flex;
     align-items: center;
@@ -5,7 +9,7 @@ form {
 }
 
 form input{ 
-    width: 80%;
+    width: 90%;
     padding: 1rem;
     background-color: var(--gray-500);
     border: 0;
@@ -28,4 +32,63 @@ form button {
     border: 0;
     background-color: var(--blue-dark);
     color: var(--gray-100);
+}
+
+form button:hover {
+    background-color: var(--blue);
+    transition: 0.4s;
+}
+
+.flexManager {
+    margin-top: 4rem;
+}
+
+
+.taskCount {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 0.875rem;
+}
+
+.taskCount span {
+    color: var(--gray-200);
+    background: var(--gray-400);
+    padding: 2px 8px;
+    border-radius: 100%;
+    font-size: 0.75rem;
+}
+
+.taskCount p:first-child{
+    color: var(--blue);
+}
+
+.taskCount p{
+    color: var(--purple);
+}
+
+.manager {
+    margin-top: 1.5rem;
+}
+
+.managerWithoutTasks {
+    margin-top: 1.5rem;
+    border-radius: 8px;
+    border-top: 1px solid var(--gray-400);
+    height: 244px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+
+.managerWithoutTasks p {
+    color: var(--gray-300);
+    font-size: 0.875rem;
+}
+
+.managerWithoutTasks p:nth-child(2) {
+    font-weight: bold;
 }
